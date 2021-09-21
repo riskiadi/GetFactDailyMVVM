@@ -4,9 +4,8 @@ plugins {
 
     //===== Begin Plugins
 
-    //kotlin kapt and navigation safeargs plugin
-//    id 'kotlin-kapt'
-//    id 'androidx.navigation.safeargs'
+    //kotlin kapt the official tool for doing annotation processing in Kotlin
+    id 'kotlin-kapt'
 
     //Kotlin parcelize
     id 'kotlin-parcelize'
@@ -41,9 +40,6 @@ android {
     kotlinOptions {
         jvmTarget = '1.8'
     }
-    buildFeature{
-        viewBinding true
-    }
 }
 
 dependencies {
@@ -73,8 +69,8 @@ dependencies {
     implementation 'com.google.android.material:material:1.5.0-alpha03'
 
     //Android Navigation Architecture
-    implementation "androidx.navigation:navigation-fragment-ktx:2.3.0-alpha06"
-    implementation "androidx.navigation:navigation-ui-ktx:2.3.0-alpha06"
+    implementation "androidx.navigation:navigation-fragment-ktx:2.4.0-alpha09"
+    implementation "androidx.navigation:navigation-ui-ktx:2.4.0-alpha09"
 
     //Android Shared Preference
     implementation "androidx.preference:preference-ktx:1.1.1"
